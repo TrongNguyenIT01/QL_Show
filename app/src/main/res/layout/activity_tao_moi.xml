@@ -23,7 +23,7 @@
         android:background="#FFC107"
         android:gravity="center"
         android:padding="2dp"
-        android:text="Thêm Lịch Show Mới"
+        android:text="Thêm Lịch Show Mới Nè"
         android:textColor="#FFFFFF"
         android:textSize="26sp"
         android:textStyle="bold|italic"
