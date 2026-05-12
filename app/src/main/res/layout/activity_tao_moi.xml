@@ -116,7 +116,7 @@
         android:layout_marginStart="12dp"
 
         android:backgroundTint="#000000"
-        android:hint="Nhập thời gian"
+        android:hint="Nhập thời gian Show"
         android:textSize="20sp"
 
         android:textStyle="italic"
