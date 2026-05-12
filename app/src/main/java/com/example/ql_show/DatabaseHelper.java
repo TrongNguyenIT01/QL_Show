@@ -12,7 +12,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_Name = "show.db";
     private static final int DB_ver = 1;
 
-    public <context> DatabaseHelper(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, DB_Name, null, DB_ver);
     }
 
@@ -75,5 +75,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return list;
     }
 
-    }
-
+}

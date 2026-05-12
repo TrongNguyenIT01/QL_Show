@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
         android:background="@drawable/btn"
-        android:text="Tạo Mới Lịch Show"
+        android:text="Tạo Mới Lịch Show của Nguyễn"
 
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
