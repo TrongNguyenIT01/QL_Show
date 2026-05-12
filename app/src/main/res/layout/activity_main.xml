@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFEEA"
+    >
+
+    <TextView
+        android:id="@+id/header_lb"
+        android:layout_width="415dp"
+        android:layout_height="91dp"
+        android:background="#FFC107"
+        android:padding="20dp"
+        android:text="App Quản Lý Show"
+
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/tao_moi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/btn"
+        android:text="Tạo Mới Lịch Show"
+
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/xem_lich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/btn"
+        android:text="Xem Lịch Làm Việc"
+        android:padding="5dp"
+
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/footer_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2026 App Quản Lý Show - Version 1.0 - Made By Trọng Nguyễn"
+
+        android:textSize="12sp"
+
+        android:alpha="0.6"
+
+        android:textColor="#000000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

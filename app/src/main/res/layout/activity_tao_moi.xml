@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tao_Moi"
+    android:background="#FFFEEA">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <TextView
+        android:id="@+id/header_lb"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Thêm Lịch Show Mới"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/ten_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Tên Show: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/header_lb" />
+
+
+    <EditText
+        android:id="@+id/edt_ten_show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:backgroundTint="#000000"
+        android:hint="Nhập tên show"
+        android:inputType="text"
+
+        android:textSize="20sp"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@id/ten_show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/ten_show"
+        app:layout_constraintTop_toTopOf="@id/ten_show"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/dia_diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Địa Điểm: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/ten_show" />
+
+    <EditText
+        android:id="@+id/edt_dia_diem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:backgroundTint="#000000"
+        android:hint="Nhập địa điểm show"
+        android:textSize="20sp"
+
+        android:textStyle="italic"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/dia_diem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/dia_diem"
+        app:layout_constraintTop_toTopOf="@id/dia_diem"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/thoi_gian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Thời Gian: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/dia_diem" />
+
+    <EditText
+        android:id="@+id/edt_thoi_gian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:backgroundTint="#000000"
+        android:hint="Nhập thời gian"
+        android:textSize="20sp"
+
+        android:textStyle="italic"
+        android:focusable="false"
+        android:clickable="true"
+
+        app:layout_constraintBottom_toBottomOf="@id/thoi_gian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/thoi_gian"
+        app:layout_constraintTop_toTopOf="@id/thoi_gian"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+
+    <TextView
+        android:id="@+id/bau_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Bầu Show: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/thoi_gian" />
+
+    <EditText
+        android:id="@+id/edt_bau_show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:backgroundTint="#000000"
+        android:hint="Nhập tên bầu show"
+        android:textSize="20sp"
+
+        android:textStyle="italic"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/bau_show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/bau_show"
+        app:layout_constraintTop_toTopOf="@id/bau_show"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/ghi_chu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Ghi Chú: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@id/thoi_gian" />
+
+    <EditText
+        android:id="@+id/edt_ghi_chu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+
+        android:backgroundTint="#000000"
+        android:hint="ghi chú"
+        android:textSize="20sp"
+
+        android:textStyle="italic"
+
+
+        app:layout_constraintBottom_toBottomOf="@id/ghi_chu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ghi_chu"
+        app:layout_constraintTop_toTopOf="@id/ghi_chu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:background="@drawable/btn"
+        android:padding="5dp"
+
+        android:text="BACK"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/btn"
+        android:padding="5dp"
+
+        android:text="Lưu"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/footer_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+
+        android:alpha="0.6"
+
+        android:text="© 2026 App Quản Lý Show - Version 1.0 - Made By Trọng Nguyễn"
+
+        android:textColor="#000000"
+
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
